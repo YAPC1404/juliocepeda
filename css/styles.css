@@ -1,11 +1,4 @@
 /* VARIABLES DE DISEÑO (Para consistencia visual) */
-
-/* Indicador visual para navegación por teclado (Accesibilidad) */
-*:focus-visible {
-    outline: 3px solid var(--primary-color);
-    outline-offset: 3px;
-    border-radius: 4px;
-}
 :root {
     /* Modo Claro */
     --bg-color: #ffffff;
@@ -14,6 +7,12 @@
     --secondary-color: #f4f4f4;
     --card-bg: #ffffff;
     --transition-speed: 0.3s;
+}
+/* Indicador visual para navegación por teclado (Accesibilidad) */
+*:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+    border-radius: 4px;
 }
 
 /* Soporte automático para preferencias del sistema */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halcón Milenario Lego  | Julio Cepeda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+</head>
+<body>
+
+    <header style="padding: 20px; text-align: center; border-bottom: 2px solid #ccc;">
+        <nav class="contenedor">
+            <a href="product-list.html" style="float: left; text-decoration: none;">← Volver</a>
+            <h2>Detalle del Producto</h2>
+            <button id="btn-theme" aria-label="Cambiar tema visual">🌙</button>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a> / 
+            <a href="product-list.html">Juguetes</a> / 
+            <span>Halcón Milenario Lego</span>
+        </nav>
+
+        <section class="detalle-grid">
+            <div class="galeria-producto">
+                <img src="./img/lego-halcon.jpg" alt="Halcón Milenario Lego vista lateral" class="img-principal">
+            </div>
+
+            <div class="info-compra">
+                <h1 class="producto-nombre">Halcón Milenario Lego</h1>
+                <p class="producto-sku">SKU: JC-2026-LEGO</p>
+
+                <p class="producto-precio-grande">$3,299.00</p>
+                
+                <div class="selector-cantidad">
+                    <label for="cantidad">Cantidad:</label>
+                    <select id="cantidad" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                </div>
+
+                <a href="cart.html" style="text-decoration: none;">
+                <button class="btn-primario btn-grande" aria-label="Añadir Halcón Milenario Lego al carrito">
+                    Añadir al Carrito
+                </button>
+                </a>
+
+                <div class="descripcion-corta">
+                    <h3>Descripción</h3>
+                    <p>Halcón Milenario Lego es una réplica detallada del icónico nave espacial de la saga Star Wars. Incluye accesorios y detalles que lo hacen ideal para coleccionistas y entusiastas de la franquicia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
