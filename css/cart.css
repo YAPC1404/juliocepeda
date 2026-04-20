@@ -1,0 +1,97 @@
+/* DISEÑO MOBILE-FIRST (1 columna) */
+.carrito-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Diseño de cada producto en la lista */
+.item-carrito {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: var(--card-shadow);
+    align-items: center;
+}
+
+.item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.item-detalles h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.item-precio {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.item-controles {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.input-cantidad {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+.btn-eliminar {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+/* El cuadro de "Resumen de Orden" */
+.carrito-resumen {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    height: fit-content;
+}
+
+.resumen-fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.resumen-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-top: 2px solid var(--secondary-color);
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+/* =========================================
+   DISEÑO ESCRITORIO (2 Columnas)
+   ========================================= */
+@media (min-width: 768px) {
+    .carrito-layout {
+        grid-template-columns: 2fr 1fr; /* 2 partes para productos, 1 parte para resumen */
+    }
+}

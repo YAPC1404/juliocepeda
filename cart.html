@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras | Julio Cepeda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+    <header style="padding: 20px; text-align: center; border-bottom: 2px solid #ccc;">
+        <nav class="contenedor">
+            <a href="product-list.html" style="float: left; text-decoration: none;">← Seguir Comprando</a>
+            <h2>Tu Carrito</h2>
+            <button id="btn-theme" aria-label="Cambiar tema visual">🌙</button>
+        </nav>
+    </header>
+
+    <main class="contenedor" style="padding: 40px 0;">
+        <div class="carrito-layout">
+            
+            <section class="carrito-items">
+                <article class="item-carrito">
+                    <img src="./img/bici-roja.jpg" alt="Bicicleta Infantil Roja" class="item-img">
+                    <div class="item-detalles">
+                        <h3>Bicicleta Infantil Roja</h3>
+                        <p class="item-precio">$1,299.00</p>
+                        <div class="item-controles">
+                            <label for="cant-bici">Cant:</label>
+                            <input type="number" id="cant-bici" value="1" min="1" class="input-cantidad">
+                            <button class="btn-eliminar" aria-label="Eliminar bicicleta del carrito">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="item-carrito">
+                    <img src="./img/lego-halcon.jpg" alt="Lego Star Wars" class="item-img">
+                    <div class="item-detalles">
+                        <h3>Lego Star Wars</h3>
+                        <p class="item-precio">$3,499.00</p>
+                        <div class="item-controles">
+                            <label for="cant-lego">Cant:</label>
+                            <input type="number" id="cant-lego" value="1" min="1" class="input-cantidad">
+                            <button class="btn-eliminar" aria-label="Eliminar Lego del carrito">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="carrito-resumen">
+                <h3>Resumen de Orden</h3>
+                <div class="resumen-fila">
+                    <span>Subtotal:</span>
+                    <span>$4,798.00</span>
+                </div>
+                <div class="resumen-fila">
+                    <span>Envío:</span>
+                    <span>Gratis</span>
+                </div>
+                <div class="resumen-total">
+                    <span>Total:</span>
+                    <span>$4,798.00</span>
+                </div>
+                
+                <a href="checkout.html" style="text-decoration: none;">
+                    <button class="btn-primario" style="margin-top: 20px;">Proceder al Pago</button>
+                </a>
+            </aside>
+
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
