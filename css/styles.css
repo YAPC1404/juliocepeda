@@ -1,0 +1,55 @@
+/* VARIABLES DE DISEÑO (Para consistencia visual) */
+
+/* Indicador visual para navegación por teclado (Accesibilidad) */
+*:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+:root {
+    /* Modo Claro */
+    --bg-color: #ffffff;
+    --text-color: #212121;
+    --primary-color: #0056b3; /* Azul Julio Cepeda */
+    --secondary-color: #f4f4f4;
+    --card-bg: #ffffff;
+    --transition-speed: 0.3s;
+}
+
+/* Soporte automático para preferencias del sistema */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #f1f1f1;
+        --secondary-color: #1e1e1e;
+        --card-bg: #1e1e1e;
+    }
+}
+
+/* Clase para activar modo oscuro manualmente con JS */
+.dark-theme {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --secondary-color: #1e1e1e;
+    --card-bg: #1e1e1e;
+}
+
+/* RESET ESTRUCTURAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.contenedor {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
