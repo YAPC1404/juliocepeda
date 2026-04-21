@@ -10,9 +10,18 @@
 </head>
 <body>
 
-    <header style="padding: 20px; text-align: center; border-bottom: 2px solid #ccc;">
-        <h2>Encabezado Temporal</h2>
-        <button id="btn-theme" aria-label="Cambiar tema visual">🌙 Cambiar Tema</button>
+    <header class="header">
+
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo de julio cepeda" width="100%" height="auto"></a></div>
+
+        <input type="text" placeholder="Buscar productos..." class="search">
+
+        <div class="icons">
+        <span>👤</span>
+        <span>🛒</span>
+        <button id="btn-theme">🌙</button>
+        </div>
+
     </header>
 
     <main class="catalogo-main">
@@ -57,8 +66,46 @@
         </section>
     </main>
 
-    <footer style="background: #343a40; color: white; padding: 20px; text-align: center; margin-top: 40px;">
-        <p>Pie de página temporal</p>
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div class="footer-section">
+            <h2>Julio Cepeda Jugueterías</h2>
+            <p>La mejor tienda de juguetes para todas las edades.</p>
+            </div>
+
+            <div class="footer-section">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="product-list.html?cat=ninos">Niños</a></li>
+                <li><a href="product-list.html?cat=ninas">Niñas</a></li>
+                <li><a href="product-list.html?cat=marcas">Marcas</a></li>
+                <li><a href="product-list.html?cat=ofertas">Ofertas</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>📍 Monterrey, México</p>
+            <p>📞 81 1234 5678</p>
+            <p>✉️ contacto@juliocepeda.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Julio Cepeda Jugueterías. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

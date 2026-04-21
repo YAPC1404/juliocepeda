@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Julio Cepeda Jugeterias</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+
+    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo de julio cepeda" width="100%" height="auto"></a></div>
+
+    <input type="text" placeholder="Buscar productos..." class="search">
+
+    <div class="icons">
+      <span>👤</span>
+      <span>🛒</span>
+      <button id="btn-theme">🌙</button>
+    </div>
+
+  </header>
+
+
+  <section class="banner">
+
+    <div class="slider">
+
+      <div class="slide">
+        <img src="img/banner_1.png">
+      </div>
+
+      <div class="slide">
+        <img src="img/banner_2.jpg">
+      </div>
+
+      <div class="slide">
+        <img src="img/banner_3.jpg">
+      </div>
+
+    </div>
+
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+
+  </section>
+
+  
+  <section class="categories">
+
+    <a href="product-list.html?cat=ninos" class="category card1">
+      <div class="text">
+        <h3>Niños</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+
+    <a href="product-list.html?cat=ninas" class="category card2">
+      <div class="text">
+        <h3>Niñas</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+
+    <a href="product-list.html?cat=marcas" class="category card3">
+      <div class="text">
+        <h3>Marcas</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+
+    <a href="product-list.html?cat=ofertas" class="category card4">
+      <div class="text">
+        <h3>Ofertas</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+  </section><br><br>
+
+  <main class="catalogo-main">
+    <section class="contenedor">
+      <h1 class="titulo-pagina">Juguetes Destacados</h1>
+            
+      <div class="grid-productos">
+                
+        <article class="tarjeta-producto">
+          <a href="product-detail.html">
+            <img src="./img/bici-roja.jpg" alt="Bicicleta Infantil Roja" class="producto-img">
+          </a>
+
+          <div class="producto-info">
+            <a href="product-detail.html" style="text-decoration: none; color: inherit;">
+              <h3 class="producto-titulo">Bicicleta Infantil Roja</h3>
+            </a>
+            <p class="producto-precio">$1,299.00</p>
+
+            <a href="cart.html" style="text-decoration: none;">
+              <button class="btn-primario" aria-label="Agregar Bicicleta Infantil Roja al carrito">Agregar al Carrito</button>
+            </a>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto">
+          <a href="product-detail-lego.html">
+            <img src="./img/lego-halcon.jpg" alt="Lego Halcón Milenario" class="producto-img">
+          </a>
+          <div class="producto-info">
+            <a href="product-detail-lego.html" style="text-decoration: none; color: inherit;">
+              <h3 class="producto-titulo">Lego Halcón Milenario</h3>
+            </a>
+            <p class="producto-precio">$3,499.00</p>
+            <a href="cart.html" style="text-decoration: none;">
+              <button class="btn-primario" aria-label="Agregar Lego Halcón Milenario al carrito">Agregar al Carrito</button>
+            </a>
+          </div>
+        </article>
+                
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>Julio Cepeda Jugueterías</h2>
+      <p>La mejor tienda de juguetes para todas las edades.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="product-list.html?cat=ninos">Niños</a></li>
+        <li><a href="product-list.html?cat=ninas">Niñas</a></li>
+        <li><a href="product-list.html?cat=marcas">Marcas</a></li>
+        <li><a href="product-list.html?cat=ofertas">Ofertas</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ayuda</h3>
+      <ul>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Envíos</a></li>
+        <li><a href="#">Devoluciones</a></li>
+        <li><a href="#">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>📍 Monterrey, México</p>
+      <p>📞 81 1234 5678</p>
+      <p>✉️ contacto@juliocepeda.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Julio Cepeda Jugueterías. Todos los derechos reservados.</p>
+  </div>
+
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
