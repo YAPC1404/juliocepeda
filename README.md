@@ -76,6 +76,5 @@ Luego abre `http://localhost:8000` en tu navegador.
 
 ## Autor
 
-Julio Cepeda · Monterrey, México
-
-© 2026 Julio Cepeda Jugueterías
+Yael Palomo Cárdenas 1927500
+Diego Roman
