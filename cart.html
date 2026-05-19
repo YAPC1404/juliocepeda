@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras | Julio Cepeda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo"><a href="index.html" aria-label="Ir al inicio"><img src="img/logo.png" alt="Logo de Julio Cepeda Jugueterías" width="100%" height="auto"></a></div>
+
+        <input type="text" placeholder="Buscar productos..." class="search" aria-label="Buscar productos">
+
+        <div class="icons">
+            <div class="font-controls" role="group" aria-label="Tamaño de letra">
+                <button type="button" data-font-btn="small" class="font-sm" aria-label="Letra pequeña">A</button>
+                <button type="button" data-font-btn="normal" class="font-md" aria-label="Letra normal">A</button>
+                <button type="button" data-font-btn="large" class="font-lg" aria-label="Letra grande">A</button>
+            </div>
+            <a href="dashboard.html" aria-label="Mi cuenta"><span>👤</span></a>
+            <a href="cart.html" class="cart-link" aria-label="Ver carrito de compras"><span>🛒</span><span class="cart-badge" aria-live="polite">0</span></a>
+            <button id="btn-theme" aria-label="Cambiar modo claro u oscuro">🌙</button>
+        </div>
+
+    </header>
+
+    <main class="contenedor" style="padding: 20px 0 40px;">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span class="sep">/</span>
+            <span aria-current="page">Carrito de Compras</span>
+        </nav>
+
+        <h1 style="margin: 10px 0 20px;">Tu Carrito</h1>
+
+        <div class="carrito-layout">
+
+            <section class="carrito-items" id="carrito-items" aria-label="Productos en el carrito">
+            </section>
+
+            <aside class="carrito-resumen" id="carrito-resumen" aria-label="Resumen de orden">
+                <h3>Resumen de Orden</h3>
+                <div class="resumen-fila">
+                    <span>Subtotal:</span>
+                    <span id="resumen-subtotal">$0.00</span>
+                </div>
+                <div class="resumen-fila">
+                    <span>Envío:</span>
+                    <span>Gratis</span>
+                </div>
+                <div class="resumen-total">
+                    <span>Total:</span>
+                    <span id="resumen-total">$0.00</span>
+                </div>
+
+                <a href="checkout.html" style="text-decoration: none;">
+                    <button class="btn-primario" style="margin-top: 20px; width: 100%;">Proceder al Pago</button>
+                </a>
+                <button class="btn-secundario" id="btn-limpiar-carrito" style="width: 100%;">Vaciar carrito</button>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+            <h2>Julio Cepeda Jugueterías</h2>
+            <p>La mejor tienda de juguetes para todas las edades.</p>
+            </div>
+
+            <div class="footer-section">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="product-list.html?cat=ninos">Niños</a></li>
+                <li><a href="product-list.html?cat=ninas">Niñas</a></li>
+                <li><a href="product-list.html?cat=marcas">Marcas</a></li>
+                <li><a href="product-list.html?cat=ofertas">Ofertas</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>📍 Monterrey, México</p>
+            <p>📞 81 1234 5678</p>
+            <p>✉️ contacto@juliocepeda.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Julio Cepeda Jugueterías. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

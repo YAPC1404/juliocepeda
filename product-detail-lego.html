@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halcón Milenario Lego | Julio Cepeda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo"><a href="index.html" aria-label="Ir al inicio"><img src="img/logo.png" alt="Logo de Julio Cepeda Jugueterías" width="100%" height="auto"></a></div>
+
+        <input type="text" placeholder="Buscar productos..." class="search" aria-label="Buscar productos">
+
+        <div class="icons">
+            <div class="font-controls" role="group" aria-label="Tamaño de letra">
+                <button type="button" data-font-btn="small" class="font-sm" aria-label="Letra pequeña">A</button>
+                <button type="button" data-font-btn="normal" class="font-md" aria-label="Letra normal">A</button>
+                <button type="button" data-font-btn="large" class="font-lg" aria-label="Letra grande">A</button>
+            </div>
+            <a href="dashboard.html" aria-label="Mi cuenta"><span>👤</span></a>
+            <a href="cart.html" class="cart-link" aria-label="Ver carrito de compras"><span>🛒</span><span class="cart-badge" aria-live="polite">0</span></a>
+            <button id="btn-theme" aria-label="Cambiar modo claro u oscuro">🌙</button>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span class="sep">/</span>
+            <a href="product-list.html">Juguetes</a>
+            <span class="sep">/</span>
+            <span aria-current="page">Halcón Milenario Lego</span>
+        </nav>
+
+        <section class="detalle-grid">
+            <div class="galeria-producto">
+                <img src="./img/lego-halcon.jpg" alt="Halcón Milenario Lego vista lateral" class="img-principal">
+            </div>
+
+            <div class="info-compra">
+                <h1 class="producto-nombre">Halcón Milenario Lego</h1>
+                <p class="producto-sku">SKU: JC-2026-LEGO</p>
+
+                <p class="producto-precio-grande">$3,299.00</p>
+
+                <div class="selector-cantidad">
+                    <label for="cantidad">Cantidad:</label>
+                    <select id="cantidad" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                </div>
+
+                <button class="btn-primario btn-grande"
+                        data-add-cart="lego-halcon"
+                        data-nombre="Halcón Milenario Lego"
+                        data-precio="3299"
+                        data-img="./img/lego-halcon.jpg"
+                        aria-label="Añadir Halcón Milenario Lego al carrito">
+                    Añadir al Carrito
+                </button>
+
+                <div class="descripcion-corta">
+                    <h3>Descripción</h3>
+                    <p>Halcón Milenario Lego es una réplica detallada del icónico nave espacial de la saga Star Wars. Incluye accesorios y detalles que lo hacen ideal para coleccionistas y entusiastas de la franquicia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div class="footer-section">
+            <h2>Julio Cepeda Jugueterías</h2>
+            <p>La mejor tienda de juguetes para todas las edades.</p>
+            </div>
+
+            <div class="footer-section">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="product-list.html?cat=ninos">Niños</a></li>
+                <li><a href="product-list.html?cat=ninas">Niñas</a></li>
+                <li><a href="product-list.html?cat=marcas">Marcas</a></li>
+                <li><a href="product-list.html?cat=ofertas">Ofertas</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>📍 Monterrey, México</p>
+            <p>📞 81 1234 5678</p>
+            <p>✉️ contacto@juliocepeda.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Julio Cepeda Jugueterías. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Julio Cepeda Jugueterías</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="logo"><a href="index.html" aria-label="Ir al inicio"><img src="img/logo.png" alt="Logo de Julio Cepeda Jugueterías" width="100%" height="auto"></a></div>
+
+    <input type="text" placeholder="Buscar productos..." class="search" aria-label="Buscar productos">
+
+    <div class="icons">
+      <div class="font-controls" role="group" aria-label="Tamaño de letra">
+        <button type="button" data-font-btn="small" class="font-sm" aria-label="Letra pequeña">A</button>
+        <button type="button" data-font-btn="normal" class="font-md" aria-label="Letra normal">A</button>
+        <button type="button" data-font-btn="large" class="font-lg" aria-label="Letra grande">A</button>
+      </div>
+      <a href="dashboard.html" aria-label="Mi cuenta"><span>👤</span></a>
+      <a href="cart.html" class="cart-link" aria-label="Ver carrito de compras"><span>🛒</span><span class="cart-badge" aria-live="polite">0</span></a>
+      <button id="btn-theme" aria-label="Cambiar modo claro u oscuro">🌙</button>
+    </div>
+
+  </header>
+
+
+  <section class="banner" aria-label="Promociones destacadas">
+
+    <div class="slider">
+
+      <div class="slide">
+        <img src="img/banner_1.png" alt="Promoción de juguetes destacados">
+      </div>
+
+      <div class="slide">
+        <img src="img/barbie.jpg" alt="Promoción de muñecas Barbie">
+      </div>
+
+      <div class="slide">
+        <img src="img/hotwheels.jpg" alt="Promoción de Hot Wheels">
+      </div>
+
+    </div>
+
+    <button class="prev" aria-label="Imagen anterior">❮</button>
+    <button class="next" aria-label="Imagen siguiente">❯</button>
+
+  </section>
+
+
+  <section class="categories" aria-label="Categorías de productos">
+
+    <a href="product-list.html?cat=ninos" class="category card1">
+      <div class="text">
+        <h3>Niños</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+
+    <a href="product-list.html?cat=ninas" class="category card2">
+      <div class="text">
+        <h3>Niñas</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+
+    <a href="product-list.html?cat=marcas" class="category card3">
+      <div class="text">
+        <h3>Marcas</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+
+    <a href="product-list.html?cat=ofertas" class="category card4">
+      <div class="text">
+        <h3>Ofertas</h3>
+        <p>Ver productos →</p>
+      </div>
+    </a>
+  </section><br><br>
+
+  <main class="catalogo-main">
+    <section class="contenedor">
+      <h1 class="titulo-pagina">Juguetes Destacados</h1>
+
+      <div class="grid-productos">
+
+        <article class="tarjeta-producto">
+          <a href="product-detail.html">
+            <img src="./img/bici-roja.jpg" alt="Bicicleta Infantil Roja" class="producto-img">
+          </a>
+
+          <div class="producto-info">
+            <a href="product-detail.html" style="text-decoration: none; color: inherit;">
+              <h3 class="producto-titulo">Bicicleta Infantil Roja</h3>
+            </a>
+            <p class="producto-precio">$1,299.00</p>
+
+            <button class="btn-primario"
+                    data-add-cart="bici-roja"
+                    data-nombre="Bicicleta Infantil Roja"
+                    data-precio="1299"
+                    data-img="./img/bici-roja.jpg"
+                    aria-label="Agregar Bicicleta Infantil Roja al carrito">Agregar al Carrito</button>
+          </div>
+        </article>
+
+        <article class="tarjeta-producto">
+          <a href="product-detail-lego.html">
+            <img src="./img/lego-halcon.jpg" alt="Lego Halcón Milenario" class="producto-img">
+          </a>
+          <div class="producto-info">
+            <a href="product-detail-lego.html" style="text-decoration: none; color: inherit;">
+              <h3 class="producto-titulo">Lego Halcón Milenario</h3>
+            </a>
+            <p class="producto-precio">$3,499.00</p>
+            <button class="btn-primario"
+                    data-add-cart="lego-halcon"
+                    data-nombre="Lego Halcón Milenario"
+                    data-precio="3499"
+                    data-img="./img/lego-halcon.jpg"
+                    aria-label="Agregar Lego Halcón Milenario al carrito">Agregar al Carrito</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>Julio Cepeda Jugueterías</h2>
+      <p>La mejor tienda de juguetes para todas las edades.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="product-list.html?cat=ninos">Niños</a></li>
+        <li><a href="product-list.html?cat=ninas">Niñas</a></li>
+        <li><a href="product-list.html?cat=marcas">Marcas</a></li>
+        <li><a href="product-list.html?cat=ofertas">Ofertas</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ayuda</h3>
+      <ul>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Envíos</a></li>
+        <li><a href="#">Devoluciones</a></li>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#" id="btn-reiniciar-tour">Ver tutorial otra vez</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>📍 Monterrey, México</p>
+      <p>📞 81 1234 5678</p>
+      <p>✉️ contacto@juliocepeda.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Julio Cepeda Jugueterías. Todos los derechos reservados.</p>
+  </div>
+
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

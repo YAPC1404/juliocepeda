@@ -1,0 +1,74 @@
+:root {
+    /* Modo Claro */
+    --bg-color: #ffffff;
+    --text-color: #212121;
+    --primary-color: #0056b3; /* Azul Julio Cepeda */
+    --secondary-color: #f4f4f4;
+    --card-bg: #ffffff;
+    --card-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    --transition-speed: 0.3s;
+}
+/* 2. CLASES DE TEMA (Para el botón de la luna) */
+.dark-theme {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --secondary-color: #1e1e1e;
+    --card-bg: #1e1e1e;
+    --card-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Esta clase fuerza el modo claro si el sistema es oscuro */
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #212121;
+    --card-bg: #ffffff;
+}
+
+/* 3. RESETEO UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    line-height: 1.6;
+    opacity: 0;
+    animation: pageFadeIn 0.5s ease forwards;
+}
+
+@keyframes pageFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* 4. UTILIDADES */
+.contenedor {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Accesibilidad: Cuadro de enfoque para navegación con teclado */
+*:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+    border-radius: 4px;
+}

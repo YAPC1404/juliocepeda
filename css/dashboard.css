@@ -1,0 +1,207 @@
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px 0 40px;
+}
+
+@media (min-width: 900px) {
+    .dashboard-layout {
+        grid-template-columns: 240px 1fr;
+    }
+}
+
+.dashboard-sidebar {
+    background: var(--card-bg);
+    padding: 25px 20px;
+    border-radius: 14px;
+    box-shadow: var(--card-shadow);
+    height: fit-content;
+}
+
+.dashboard-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.dashboard-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dashboard-perfil h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.dashboard-perfil p {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.dashboard-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dashboard-menu button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    padding: 12px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-menu button:hover {
+    background: var(--secondary-color);
+}
+
+.dashboard-menu button.activo {
+    background: var(--primary-color);
+    color: white;
+}
+
+.dashboard-content {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: var(--card-shadow);
+    min-height: 400px;
+}
+
+.dashboard-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.panel {
+    display: none;
+    animation: fadeUp 0.3s ease;
+}
+
+.panel.activo {
+    display: block;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.pedido {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pedido:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+}
+
+.pedido-info h4 {
+    margin-bottom: 4px;
+}
+
+.pedido-info p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.pedido-estado {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.pedido-estado.entregado { background: #4caf50; color: white; }
+.pedido-estado.enviado { background: #2196f3; color: white; }
+.pedido-estado.proceso { background: #ff9800; color: white; }
+
+.config-grupo {
+    margin-bottom: 25px;
+}
+
+.config-grupo label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.config-grupo input,
+.config-grupo select {
+    width: 100%;
+    max-width: 380px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.direccion-card,
+.tarjeta-card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direccion-card h4,
+.tarjeta-card h4 {
+    margin-bottom: 4px;
+}
+
+.direccion-card p,
+.tarjeta-card p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+}

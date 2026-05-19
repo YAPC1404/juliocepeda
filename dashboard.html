@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta | Julio Cepeda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo"><a href="index.html" aria-label="Ir al inicio"><img src="img/logo.png" alt="Logo de Julio Cepeda Jugueterías" width="100%" height="auto"></a></div>
+
+        <input type="text" placeholder="Buscar productos..." class="search" aria-label="Buscar productos">
+
+        <div class="icons">
+            <div class="font-controls" role="group" aria-label="Tamaño de letra">
+                <button type="button" data-font-btn="small" class="font-sm" aria-label="Letra pequeña">A</button>
+                <button type="button" data-font-btn="normal" class="font-md" aria-label="Letra normal">A</button>
+                <button type="button" data-font-btn="large" class="font-lg" aria-label="Letra grande">A</button>
+            </div>
+            <a href="dashboard.html" aria-label="Mi cuenta"><span>👤</span></a>
+            <a href="cart.html" class="cart-link" aria-label="Ver carrito de compras"><span>🛒</span><span class="cart-badge" aria-live="polite">0</span></a>
+            <button id="btn-theme" aria-label="Cambiar modo claro u oscuro">🌙</button>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <nav class="breadcrumbs" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span class="sep">/</span>
+            <span aria-current="page">Mi Cuenta</span>
+        </nav>
+
+        <h1 style="margin: 10px 0 20px;">Mi Cuenta</h1>
+
+        <div class="dashboard-layout">
+
+            <aside class="dashboard-sidebar" aria-label="Menú de la cuenta">
+                <div class="dashboard-perfil">
+                    <div class="dashboard-avatar" aria-hidden="true">JC</div>
+                    <h3>Julio Cliente</h3>
+                    <p>cliente@juliocepeda.com</p>
+                </div>
+                <ul class="dashboard-menu">
+                    <li><button type="button" data-panel="pedidos" class="activo">📦 Pedidos recientes</button></li>
+                    <li><button type="button" data-panel="config">⚙️ Configuración</button></li>
+                    <li><button type="button" data-panel="direcciones">📍 Direcciones</button></li>
+                    <li><button type="button" data-panel="pago">💳 Métodos de pago</button></li>
+                </ul>
+            </aside>
+
+            <section class="dashboard-content">
+
+                <div class="panel activo" id="panel-pedidos">
+                    <h2>Pedidos recientes</h2>
+
+                    <article class="pedido">
+                        <div class="pedido-info">
+                            <h4>Pedido #JC-2026-00427</h4>
+                            <p>Fecha: 12 de mayo, 2026 · Total: $4,798.00</p>
+                            <p>Bicicleta Infantil Roja, Lego Halcón Milenario</p>
+                        </div>
+                        <span class="pedido-estado entregado">Entregado</span>
+                    </article>
+
+                    <article class="pedido">
+                        <div class="pedido-info">
+                            <h4>Pedido #JC-2026-00398</h4>
+                            <p>Fecha: 28 de abril, 2026 · Total: $1,299.00</p>
+                            <p>Bicicleta Infantil Roja</p>
+                        </div>
+                        <span class="pedido-estado enviado">Enviado</span>
+                    </article>
+
+                    <article class="pedido">
+                        <div class="pedido-info">
+                            <h4>Pedido #JC-2026-00351</h4>
+                            <p>Fecha: 14 de abril, 2026 · Total: $899.00</p>
+                            <p>Muñeca Barbie Estilista</p>
+                        </div>
+                        <span class="pedido-estado proceso">En proceso</span>
+                    </article>
+                </div>
+
+                <div class="panel" id="panel-config">
+                    <h2>Configuración de cuenta</h2>
+
+                    <div class="config-grupo">
+                        <label for="cfg-nombre">Nombre completo</label>
+                        <input id="cfg-nombre" type="text" value="Julio Cliente">
+                    </div>
+
+                    <div class="config-grupo">
+                        <label for="cfg-email">Correo electrónico</label>
+                        <input id="cfg-email" type="email" value="cliente@juliocepeda.com">
+                    </div>
+
+                    <div class="config-grupo">
+                        <label for="cfg-tel">Teléfono</label>
+                        <input id="cfg-tel" type="tel" value="81 1234 5678">
+                    </div>
+
+                    <div class="config-grupo">
+                        <label for="cfg-idioma">Idioma</label>
+                        <select id="cfg-idioma">
+                            <option value="es" selected>Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn-primario" id="btn-guardar-config">Guardar cambios</button>
+                    <button type="button" class="btn-link" id="btn-reiniciar-tour" style="display:block; margin-top:20px;">Ver tutorial otra vez</button>
+                </div>
+
+                <div class="panel" id="panel-direcciones">
+                    <h2>Direcciones</h2>
+
+                    <article class="direccion-card">
+                        <div>
+                            <h4>Casa</h4>
+                            <p>Av. Constitución 123, Col. Centro</p>
+                            <p>Monterrey, NL · CP 64000</p>
+                        </div>
+                        <button type="button" class="btn-link">Editar</button>
+                    </article>
+
+                    <article class="direccion-card">
+                        <div>
+                            <h4>Oficina</h4>
+                            <p>Calle Padre Mier 456, Col. Obispado</p>
+                            <p>Monterrey, NL · CP 64060</p>
+                        </div>
+                        <button type="button" class="btn-link">Editar</button>
+                    </article>
+
+                    <button type="button" class="btn-primario">+ Añadir dirección</button>
+                </div>
+
+                <div class="panel" id="panel-pago">
+                    <h2>Métodos de pago</h2>
+
+                    <article class="tarjeta-card">
+                        <div>
+                            <h4>💳 Visa terminación 4242</h4>
+                            <p>Vence: 08/28 · Titular: Julio Cliente</p>
+                        </div>
+                        <button type="button" class="btn-link">Eliminar</button>
+                    </article>
+
+                    <article class="tarjeta-card">
+                        <div>
+                            <h4>💳 Mastercard terminación 1881</h4>
+                            <p>Vence: 04/27 · Titular: Julio Cliente</p>
+                        </div>
+                        <button type="button" class="btn-link">Eliminar</button>
+                    </article>
+
+                    <button type="button" class="btn-primario">+ Añadir tarjeta</button>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Julio Cepeda Jugueterías</h2>
+                <p>La mejor tienda de juguetes para todas las edades.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="product-list.html?cat=ninos">Niños</a></li>
+                    <li><a href="product-list.html?cat=ninas">Niñas</a></li>
+                    <li><a href="product-list.html?cat=marcas">Marcas</a></li>
+                    <li><a href="product-list.html?cat=ofertas">Ofertas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Monterrey, México</p>
+                <p>📞 81 1234 5678</p>
+                <p>✉️ contacto@juliocepeda.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Julio Cepeda Jugueterías. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.dashboard-menu button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const panel = btn.dataset.panel;
+                document.querySelectorAll('.dashboard-menu button').forEach(b => b.classList.remove('activo'));
+                document.querySelectorAll('.panel').forEach(p => p.classList.remove('activo'));
+                btn.classList.add('activo');
+                const target = document.getElementById('panel-' + panel);
+                if (target) target.classList.add('activo');
+            });
+        });
+        const btnGuardar = document.getElementById('btn-guardar-config');
+        if (btnGuardar) {
+            btnGuardar.addEventListener('click', () => {
+                if (typeof mostrarToast === 'function') {
+                    mostrarToast('Cambios guardados');
+                }
+            });
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

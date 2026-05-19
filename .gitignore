@@ -1,0 +1,10 @@
+.DS_Store
+IYEU PIA.md
+CLAUDE.md
+memory/
+.claude/
+node_modules/
+.vscode/
+.idea/
+Thumbs.db
+*.log
